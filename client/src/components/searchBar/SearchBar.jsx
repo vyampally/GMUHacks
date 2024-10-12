@@ -2,12 +2,12 @@ import { useState } from "react";
 import "./searchBar.scss";
 import { Link } from "react-router-dom";
 
-const types = ["buy",];
+const types = ["buy"];
 
 function SearchBar() {
   const [query, setQuery] = useState({
     type: "buy",
-    city: "",
+    city: "Fairfax",  // Default value set to Fairfax
     minPrice: 0,
     maxPrice: 0,
   });
@@ -38,7 +38,8 @@ function SearchBar() {
           type="text"
           name="city"
           placeholder="City"
-          onChange={handleChange}
+          value="Fairfax" // Default value shown as Fairfax
+          disabled  // Greyed out and non-editable
         />
         <input
           type="number"
