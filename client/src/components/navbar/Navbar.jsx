@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import "./navbar.scss";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; // Make sure you're using Link from react-router-dom
 import { AuthContext } from "../../context/AuthContext";
 import { useNotificationStore } from "../../lib/notificationStore";
 
@@ -12,19 +12,19 @@ function Navbar() {
   const fetch = useNotificationStore((state) => state.fetch);
   const number = useNotificationStore((state) => state.number);
 
-  if(currentUser) fetch();
+  if (currentUser) fetch();
 
   return (
     <nav>
       <div className="left">
-        <a href="/" className="logo">
-          <img src="/bg.png" alt="" />
+        <Link to="/" className="logo">  {/* Change to Link */}
+          <img src="/bg.png" alt="HomeConnect" />
           <span>HomeConnect</span>
-        </a>
-        <a href="/">Home</a>
-        <a href="/">About</a>
-        <a href="/">Contact</a>
-        <a href="/">Agents</a>
+        </Link>
+        <Link to="/">Home</Link>  {/* Use Link instead of <a> */}
+        <Link to="/document-manager">Document Manager</Link>  {/* Corrected the route path */}
+        <Link to="/contact">Contact</Link>  {/* Assuming you have a Contact page */}
+        <Link to="/first-time-home-buyer">First Time Home Buyer?</Link>  {/* Link to the correct page */}
       </div>
       <div className="right">
         {currentUser ? (
@@ -38,10 +38,8 @@ function Navbar() {
           </div>
         ) : (
           <>
-            <a href="/login">Sign in</a>
-            <a href="/register" className="register">
-              Sign up
-            </a>
+            <Link to="/login">Sign in</Link>  {/* Change to Link */}
+            <Link to="/register" className="register">Sign up</Link>  {/* Change to Link */}
           </>
         )}
         <div className="menuIcon">
@@ -52,12 +50,12 @@ function Navbar() {
           />
         </div>
         <div className={open ? "menu active" : "menu"}>
-          <a href="/">Home</a>
-          <a href="/">About</a>
-          <a href="/">Contact</a>
-          <a href="/">Agents</a>
-          <a href="/">Sign in</a>
-          <a href="/">Sign up</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/first-time-home-buyer">First Time Home Buyer?</Link>
+          <Link to="/login">Sign in</Link>
+          <Link to="/register">Sign up</Link>
         </div>
       </div>
     </nav>
