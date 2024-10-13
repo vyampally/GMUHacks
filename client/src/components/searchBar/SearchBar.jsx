@@ -2,22 +2,16 @@ import { useState } from "react";
 import "./searchBar.scss";
 import { Link } from "react-router-dom";
 
-const types = ["buy"];
+const types = ["Buy"];
 
 function SearchBar() {
   const [query, setQuery] = useState({
-    type: "buy",
-    city: "Fairfax",  // Default value set to Fairfax
-    minPrice: 0,
-    maxPrice: 0,
+    type: "Buy",
+    city: "Fairfax", // Default value set to Fairfax
   });
 
   const switchType = (val) => {
     setQuery((prev) => ({ ...prev, type: val }));
-  };
-
-  const handleChange = (e) => {
-    setQuery((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   return (
@@ -38,30 +32,15 @@ function SearchBar() {
           type="text"
           name="city"
           placeholder="City"
-          value="Fairfax" // Default value shown as Fairfax
-          disabled  // Greyed out and non-editable
-        />
-        <input
-          type="number"
-          name="minPrice"
-          min={0}
-          max={10000000}
-          placeholder="Min Price"
-          onChange={handleChange}
-        />
-        <input
-          type="number"
-          name="maxPrice"
-          min={0}
-          max={10000000}
-          placeholder="Max Price"
-          onChange={handleChange}
+          value={query.city} // Bind value to state for controlled input
+          disabled // Make the input non-editable and greyed out
         />
         <Link
-          to={`/list?type=${query.type}&city=${query.city}&minPrice=${query.minPrice}&maxPrice=${query.maxPrice}`}
+          to={`/list?type=${query.type}&city=${query.city}`} // Updated link to remove min/max
         >
-          <button>
-            <img src="/search.png" alt="" />
+          <button type="button"> {/* Add type="button" to prevent form submission */}
+            <img src="/search.png" alt="Search" />
+            Search Now
           </button>
         </Link>
       </form>

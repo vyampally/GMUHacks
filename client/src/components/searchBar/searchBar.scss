@@ -1,95 +1,88 @@
 @import "../../responsive.scss";
 
 .searchBar {
+  display: flex;
+  align-items: center;
+  border-radius: 10px; // Rounded corners for a softer look
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+  padding: 10px; // Padding inside the search bar
+  background-color: #fff; // White background for contrast
+  margin: 20px; // Margin around the search bar
+
   .type {
+    display: flex; // Flex layout for type buttons
+    margin-right: 10px; // Space between type buttons and the form
+
     button {
-      padding: 16px 36px;
-      border: 1px solid #999;
-      border-bottom: none;
+      padding: 12px 20px; // Adjust button padding
+      border: none; // Remove default border
+      border-radius: 5px; // Rounded button corners
       cursor: pointer;
-      background-color: white;
-      text-transform: capitalize;
+      background-color: #f0f0f0; // Light gray background
+      color: #333; // Dark text color
+      transition: background-color 0.3s ease; // Smooth transition for hover
 
       &.active {
-        background-color: black;
-        color: white;
+        background-color: #333; // Dark background for active type
+        color: white; // White text for contrast
       }
 
-      &:first-child {
-        border-top-left-radius: 5px;
-        border-right: none;
-      }
-      &:last-child {
-        border-top-right-radius: 5px;
-        border-left: none;
+      &:hover {
+        background-color: #ddd; // Darker gray on hover
       }
     }
   }
 
   form {
-    border: 1px solid #999;
     display: flex;
-    justify-content: space-between;
-    height: 64px;
-    gap: 5px;
-    width: 100%;  // Adjust the width of the search bar
-
-    @include sm {
-      flex-direction: column;
-      border: none;
-    }
+    align-items: center; // Center items vertically
+    gap: 10px; // Gap between input and button
 
     input {
-      border: none;
-      padding: 0px 10px;
-      width: 250px;  // Increased the width for a wider search bar
+      border: 1px solid #ccc; // Subtle border for the input
+      border-radius: 5px; // Rounded input corners
+      padding: 10px; // Input padding
+      width: 250px; // Fixed width
+      font-size: 16px; // Font size for better readability
+      color: #555; // Dark gray text color
+      background-color: #f9f9f9; // Slightly off-white background
+      transition: border 0.3s ease; // Smooth border transition
 
-      @include lg {
-        padding: 0px 5px;
-
-        &:nth-child(2),
-        &:nth-child(3) {
-          width: 180px;  // Adjusted for larger screens
-        }
-      }
-      @include md {
-        width: 250px;  // Increased width for medium screens
-        &:nth-child(2),
-        &:nth-child(3) {
-          width: 250px;  // Increased width for input fields
-        }
+      &:disabled {
+        background-color: #e9ecef; // Gray background for disabled state
+        color: #888; // Gray text color
       }
 
-      @include sm{
-        width: auto;
-        &:nth-child(2),
-        &:nth-child(3) {
-          width: auto;
-        }
-        padding: 20px;
-        border: 1px solid #999;
+      &:focus {
+        outline: none; // Remove default outline
+        border-color: #5b9bd5; // Change border color on focus
       }
     }
 
-    a{
-      flex: 1;
-      background-color: #fece51;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    a {
+      flex: none; // Prevent link from growing
+      display: inline-block; // Inline-block for button styling
 
       button {
         border: none;
         cursor: pointer;
-        background-color: #fece51;
-        
-        @include sm{
-          padding: 10px;
-        }
-        
+        border-radius: 5px; // Rounded button corners
+        padding: 10px 15px; // Button padding
+        background-color: #5b9bd5; // Blue background color
+        color: white; // White text color
+        font-weight: bold; // Bold text
+        display: flex; // Flex for image and text alignment
+        align-items: center;
+        transition: background-color 0.3s ease; // Smooth background transition
+
         img {
-          width: 24px;
-          height: 24px;
+          width: 24px; // Set width for the icon
+          height: 24px; // Set height for the icon
+          margin-right: 5px; // Space between icon and text
+        }
+
+        &:hover {
+          background-color: #4a8bcf; // Darker blue on hover
         }
       }
     }
