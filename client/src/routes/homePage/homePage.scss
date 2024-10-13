@@ -1,0 +1,51 @@
+@import "../../responsive.scss";
+
+.homePage {
+  display: flex;
+  height: 100%;
+  align-items: center; // Center vertically
+  justify-content: center; // Center horizontally
+
+  .textContainer {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center; // Center vertically
+    text-align: center; // Center the text
+
+    .wrapper {
+      padding-right: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; // Align everything at the center
+      gap: 30px; // Reduced gap for more balanced layout
+      height: 100%;
+
+      @include lg {
+        padding-right: 50px;
+      }
+
+      @include md {
+        padding: 0;
+      }
+
+      @include sm {
+        justify-content: flex-start;
+      }
+
+      .logo {
+        width: 150px;  // Adjust the width of the logo as needed
+        margin-bottom: 20px;  // Add some space below the logo
+      }
+
+      .title {
+        font-size: 64px;
+
+        @include lg {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+}

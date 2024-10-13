@@ -1,0 +1,90 @@
+@import "../../responsive.scss";
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  border-radius: 10px; // Rounded corners for a softer look
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+  padding: 10px; // Padding inside the search bar
+  background-color: #fff; // White background for contrast
+  margin: 20px; // Margin around the search bar
+
+  .type {
+    display: flex; // Flex layout for type buttons
+    margin-right: 10px; // Space between type buttons and the form
+
+    button {
+      padding: 12px 20px; // Adjust button padding
+      border: none; // Remove default border
+      border-radius: 5px; // Rounded button corners
+      cursor: pointer;
+      background-color: #f0f0f0; // Light gray background
+      color: #333; // Dark text color
+      transition: background-color 0.3s ease; // Smooth transition for hover
+
+      &.active {
+        background-color: #333; // Dark background for active type
+        color: white; // White text for contrast
+      }
+
+      &:hover {
+        background-color: #ddd; // Darker gray on hover
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    align-items: center; // Center items vertically
+    gap: 10px; // Gap between input and button
+
+    input {
+      border: 1px solid #ccc; // Subtle border for the input
+      border-radius: 5px; // Rounded input corners
+      padding: 10px; // Input padding
+      width: 250px; // Fixed width
+      font-size: 16px; // Font size for better readability
+      color: #555; // Dark gray text color
+      background-color: #f9f9f9; // Slightly off-white background
+      transition: border 0.3s ease; // Smooth border transition
+
+      &:disabled {
+        background-color: #e9ecef; // Gray background for disabled state
+        color: #888; // Gray text color
+      }
+
+      &:focus {
+        outline: none; // Remove default outline
+        border-color: #5b9bd5; // Change border color on focus
+      }
+    }
+
+    a {
+      flex: none; // Prevent link from growing
+      display: inline-block; // Inline-block for button styling
+
+      button {
+        border: none;
+        cursor: pointer;
+        border-radius: 5px; // Rounded button corners
+        padding: 10px 15px; // Button padding
+        background-color: #5b9bd5; // Blue background color
+        color: white; // White text color
+        font-weight: bold; // Bold text
+        display: flex; // Flex for image and text alignment
+        align-items: center;
+        transition: background-color 0.3s ease; // Smooth background transition
+
+        img {
+          width: 24px; // Set width for the icon
+          height: 24px; // Set height for the icon
+          margin-right: 5px; // Space between icon and text
+        }
+
+        &:hover {
+          background-color: #4a8bcf; // Darker blue on hover
+        }
+      }
+    }
+  }
+}
