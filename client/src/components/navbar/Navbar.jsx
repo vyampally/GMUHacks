@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import "./navbar.scss";
-import { Link } from "react-router-dom"; // Make sure you're using Link from react-router-dom
+import { Link } from "react-router-dom"; // Ensure you're using Link from react-router-dom
 import { AuthContext } from "../../context/AuthContext";
 import { useNotificationStore } from "../../lib/notificationStore";
 
@@ -17,14 +17,14 @@ function Navbar() {
   return (
     <nav>
       <div className="left">
-        <Link to="/" className="logo">  {/* Change to Link */}
+        <Link to="/" className="logo">
           <img src="/bg.png" alt="HomeConnect" />
           <span>HomeConnect</span>
         </Link>
-        <Link to="/">Home</Link>  {/* Use Link instead of <a> */}
-        <Link to="/document-manager">Document Manager</Link>  {/* Corrected the route path */}
-        <Link to="/contact">Contact</Link>  {/* Assuming you have a Contact page */}
-        <Link to="/first-time-home-buyer">First Time Home Buyer?</Link>  {/* Link to the correct page */}
+        <Link to="/">Home</Link>
+        <Link to="/document-manager">Document Manager</Link>
+        <Link to="/finance-calculator">Finance Calculator</Link>
+        <Link to="/first-time-home-buyer">First Time Home Buyer?</Link>
       </div>
       <div className="right">
         {currentUser ? (
@@ -38,21 +38,21 @@ function Navbar() {
           </div>
         ) : (
           <>
-            <Link to="/login">Sign in</Link>  {/* Change to Link */}
-            <Link to="/register" className="register">Sign up</Link>  {/* Change to Link */}
+            <Link to="/login">Sign in</Link>
+            <Link to="/register" className="register">Sign up</Link>
           </>
         )}
         <div className="menuIcon">
           <img
             src="/menu.png"
-            alt=""
+            alt="Menu"
             onClick={() => setOpen((prev) => !prev)}
           />
         </div>
         <div className={open ? "menu active" : "menu"}>
           <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/document-manager">Document Manager</Link>
+          <Link to="/finance-calculator">Finance Calculator</Link>
           <Link to="/first-time-home-buyer">First Time Home Buyer?</Link>
           <Link to="/login">Sign in</Link>
           <Link to="/register">Sign up</Link>

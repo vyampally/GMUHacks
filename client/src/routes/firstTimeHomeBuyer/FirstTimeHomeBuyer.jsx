@@ -1,5 +1,6 @@
 import React from 'react';
 import './firstTimeHomeBuyer.scss'; // You can style this page using this CSS file
+import { Link } from 'react-router-dom';
 
 const FirstTimeHomeBuyer = () => {
   return (
@@ -35,11 +36,14 @@ const FirstTimeHomeBuyer = () => {
       </p>
 
       <h2>Resources</h2>
-      {/* <ul>
-        <li><a href="/mortgage-calculator">Mortgage Calculator</a></li>
-        <li><a href="/real-estate-agents">Find a Real Estate Agent</a></li>
-        <li><a href="/faq">Frequently Asked Questions</a></li>
-      </ul> */}
+      <ul>
+        <li>
+          <Link to="/finance-calculator">Finance Calculator</Link>
+        </li>
+        <li>
+          <Link to="/document-manager">Document Manager</Link>
+        </li>
+      </ul>
     </div>
   );
 };

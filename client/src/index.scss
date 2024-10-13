@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -9,7 +9,19 @@ a {
   color: inherit;
 }
 
-body{
+body {
   font-family: "Lato", sans-serif;
-  overflow: hidden;
+  /* Ensure the body allows scrolling */
+  overflow-x: hidden; /* Only hide horizontal overflow to prevent sideways scrolling */
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Optionally, ensure your main container has space for scrolling */
+main {
+  min-height: 100vh;
+  overflow-y: auto; /* Allow vertical scrolling if the content exceeds the viewport */
 }
