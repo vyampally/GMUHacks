@@ -9,7 +9,7 @@ export const listData = [
     description: "Beautiful family home with large backyard.",
     type: "Single-family",
     yearBuilt: 2010,
-    images: []
+    images: ["https://images.pexels.com/photos/259600/pexels-photo-259600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const listData = [
     description: "Spacious house in a quiet neighborhood.",
     type: "Single-family",
     yearBuilt: 2015,
-    images: []
+    images: ["https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const listData = [
     description: "Cozy home with modern amenities.",
     type: "Single-family",
     yearBuilt: 2008,
-    images: []
+    images: ["https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ export const listData = [
     description: "Luxury home with a pool and large deck.",
     type: "Single-family",
     yearBuilt: 2017,
-    images: []
+    images: ["https://images.pexels.com/photos/259931/pexels-photo-259931.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ export const listData = [
     description: "Newly renovated kitchen and bathrooms.",
     type: "Townhouse",
     yearBuilt: 2012,
-    images: []
+    images: ["https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ export const listData = [
     description: "Perfect starter home in a great location.",
     type: "Condo",
     yearBuilt: 2006,
-    images: []
+    images: ["https://images.pexels.com/photos/206172/pexels-photo-206172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 7,
@@ -81,7 +81,7 @@ export const listData = [
     description: "Spacious home with a finished basement.",
     type: "Single-family",
     yearBuilt: 2013,
-    images: []
+    images: ["https://images.pexels.com/photos/259684/pexels-photo-259684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 8,
@@ -93,7 +93,7 @@ export const listData = [
     description: "Open floor plan with a beautiful backyard.",
     type: "Townhouse",
     yearBuilt: 2010,
-    images: []
+    images: ["https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 9,
@@ -105,7 +105,7 @@ export const listData = [
     description: "Move-in ready home with updated features.",
     type: "Single-family",
     yearBuilt: 2016,
-    images: []
+    images: ["https://images.pexels.com/photos/271654/pexels-photo-271654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 10,
@@ -117,7 +117,7 @@ export const listData = [
     description: "Great home in a desirable school district.",
     type: "Single-family",
     yearBuilt: 2009,
-    images: []
+    images: ["https://images.pexels.com/photos/261146/pexels-photo-261146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 11,
@@ -129,7 +129,7 @@ export const listData = [
     description: "Charming home with modern updates.",
     type: "Single-family",
     yearBuilt: 2007,
-    images: []
+    images: ["https://images.pexels.com/photos/36377/door-wood-house-home.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 12,
@@ -141,7 +141,7 @@ export const listData = [
     description: "Large home with plenty of natural light.",
     type: "Single-family",
     yearBuilt: 2018,
-    images: []
+    images: ["https://images.pexels.com/photos/259618/pexels-photo-259618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 13,
@@ -153,7 +153,7 @@ export const listData = [
     description: "Custom-built home with high-end finishes.",
     type: "Single-family",
     yearBuilt: 2020,
-    images: []
+    images: ["https://images.pexels.com/photos/271612/pexels-photo-271612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 14,
@@ -165,7 +165,7 @@ export const listData = [
     description: "Quiet neighborhood with excellent amenities.",
     type: "Townhouse",
     yearBuilt: 2011,
-    images: []
+    images: ["https://images.pexels.com/photos/259798/pexels-photo-259798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 15,
@@ -177,7 +177,7 @@ export const listData = [
     description: "Spacious home with updated appliances.",
     type: "Single-family",
     yearBuilt: 2014,
-    images: []
+    images: ["https://images.pexels.com/photos/323782/pexels-photo-323782.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 16,
@@ -189,7 +189,7 @@ export const listData = [
     description: "Beautiful landscaping and curb appeal.",
     type: "Single-family",
     yearBuilt: 2008,
-    images: []
+    images: ["https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 17,
@@ -201,7 +201,7 @@ export const listData = [
     description: "Luxury living with a backyard patio.",
     type: "Single-family",
     yearBuilt: 2016,
-    images: []
+    images: ["https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 18,
@@ -213,7 +213,7 @@ export const listData = [
     description: "Modern home with energy-efficient features.",
     type: "Single-family",
     yearBuilt: 2015,
-    images: []
+    images: ["https://images.pexels.com/photos/323777/pexels-photo-323777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 19,
@@ -225,7 +225,7 @@ export const listData = [
     description: "Updated home with a spacious backyard.",
     type: "Townhouse",
     yearBuilt: 2011,
-    images: []
+    images: ["https://images.pexels.com/photos/261148/pexels-photo-261148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   },
   {
     id: 20,
@@ -237,7 +237,67 @@ export const listData = [
     description: "Perfect family home in a friendly neighborhood.",
     type: "Single-family",
     yearBuilt: 2018,
-    images: []
+    images: ["https://images.pexels.com/photos/37347/door-wood-house-home.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
+  },
+  {
+    id: 21,
+    address: "1088 Chestnut Street, Fairfax, VA",
+    price: 640000,
+    bedrooms: 4,
+    bathrooms: 3,
+    squareFeet: 2700,
+    description: "Well-maintained home with a large backyard.",
+    type: "Single-family",
+    yearBuilt: 2015,
+    images: ["https://images.pexels.com/photos/271652/pexels-photo-271652.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
+  },
+  {
+    id: 22,
+    address: "1099 Elm Street, Fairfax, VA",
+    price: 590000,
+    bedrooms: 3,
+    bathrooms: 2,
+    squareFeet: 2200,
+    description: "Quiet location with excellent school district.",
+    type: "Single-family",
+    yearBuilt: 2013,
+    images: ["https://images.pexels.com/photos/323723/pexels-photo-323723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
+  },
+  {
+    id: 23,
+    address: "1100 Oak Lane, Fairfax, VA",
+    price: 710000,
+    bedrooms: 5,
+    bathrooms: 4,
+    squareFeet: 3000,
+    description: "Gorgeous home with a modern kitchen.",
+    type: "Single-family",
+    yearBuilt: 2017,
+    images: ["https://images.pexels.com/photos/323723/pexels-photo-323723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
+  },
+  {
+    id: 24,
+    address: "1111 Pine Road, Fairfax, VA",
+    price: 650000,
+    bedrooms: 4,
+    bathrooms: 3,
+    squareFeet: 2800,
+    description: "Open floor plan with hardwood floors.",
+    type: "Single-family",
+    yearBuilt: 2014,
+    images: ["https://images.pexels.com/photos/323727/pexels-photo-323727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
+  },
+  {
+    id: 25,
+    address: "1122 Maple Avenue, Fairfax, VA",
+    price: 800000,
+    bedrooms: 5,
+    bathrooms: 4,
+    squareFeet: 3200,
+    description: "Luxury home with a spacious master suite.",
+    type: "Single-family",
+    yearBuilt: 2019,
+    images: ["https://images.pexels.com/photos/259621/pexels-photo-259621.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"]
   }
 ];
 

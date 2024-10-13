@@ -1,21 +1,19 @@
 import { defer } from "react-router-dom";
-import apiRequest from "./apiRequest";
+import { listData, singlePostData } from "./dummydata"; // Adjust the path as needed
 
-export const singlePageLoader = async ({ request, params }) => {
-  const res = await apiRequest("/posts/" + params.id);
-  return res.data;
+export const singlePageLoader = async ({ params }) => {
+  const post = singlePostData; // Use the single post data directly
+  return post;
 };
-export const listPageLoader = async ({ request, params }) => {
-  const query = request.url.split("?")[1];
-  const postPromise = apiRequest("/posts?" + query);
-  return defer({
-    postResponse: postPromise,
-  });
+
+export const listPageLoader = () => {
+  // Return the hardcoded data directly
+  return { postResponse: listData }; // Wrap in an object if your existing code expects it that way
 };
 
 export const profilePageLoader = async () => {
-  const postPromise = apiRequest("/users/profilePosts");
-  const chatPromise = apiRequest("/chats");
+  const postPromise = Promise.resolve(listData); // You can still use the dummy data if needed
+  const chatPromise = Promise.resolve([]); // Assuming you don't have chat data in your dummy data
   return defer({
     postResponse: postPromise,
     chatResponse: chatPromise,
